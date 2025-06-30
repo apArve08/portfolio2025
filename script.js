@@ -19,16 +19,27 @@ function toggleTimelineExpansion(element) {
 }
 
 //project expanded 
-
-function toggleProjectExpansion(element) {
+// Project expansion functionality
+function toggleProjectExpansion(element, event) {
+    if (event) {
+        event.stopPropagation(); // Prevent event bubbling
+    }
+    
+    // Close other expanded project cards first
+    document.querySelectorAll('.project-card.expanded').forEach(item => {
+        if (item !== element) {
+            item.classList.remove('expanded');
+            item.querySelector('.project-expand-btn').textContent = 'Show More Details';
+        }
+    });
+    
     element.classList.toggle('expanded');
     const btn = element.querySelector('.project-expand-btn');
     if (element.classList.contains('expanded')) {
         btn.textContent = 'Show Less Details';
-    } else{ 
+    } else {
         btn.textContent = 'Show More Details';
     }
-    
 }
 /*
 function toggleProjectExpansion(element) {
@@ -180,6 +191,29 @@ function addScrollProgress() {
         progressBar.style.width = scrolled + '%';
     });
 }
+function showThankYouPopup() {
+    // Show the thank you popup immediately
+    document.getElementById('thankYouModal').style.display = 'flex';
+    
+    // Auto close after 3 seconds and let form submit normally
+    setTimeout(function() {
+        document.getElementById('thankYouModal').style.display = 'none';
+    }, 3000);
+    
+    // Return true to allow form submission to continue
+    return true;
+}
 
+function closeThankYouModal() {
+    document.getElementById('thankYouModal').style.display = 'none';
+}
+
+// Close modal when clicking outside of it
+window.onclick = function(event) {
+    const modal = document.getElementById('thankYouModal');
+    if (event.target == modal) {
+        modal.style.display = 'none';
+    }
+}
 // Uncomment the line below if you want the scroll progress bar
 addScrollProgress();
