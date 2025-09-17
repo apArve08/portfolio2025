@@ -17,6 +17,7 @@
                 <li><a href="#experience">Experience</a></li>
                 <li><a href="#education">Education</a></li>
                 <li><a href="#projects">Projects</a></li>
+                <li><a href="https://github.com/apArve08">GitHub</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </div>
@@ -51,6 +52,52 @@
     <section id="experience" class="section">
         <h2 class="section-title">Experience</h2>
         <div class="timeline">
+            <!-- experience latest-->   
+            <div class="timeline-item" onclick="toggleTimelineExpansion(this)">
+                <div class="timeline-content">
+                    <h3 class="timeline-title">IT Technician</h3>
+                    <div class="timeline-company">YBS International Berhad</div>
+                    <div class="timeline-date">July 2025</div>
+                    <p class="timeline-description">Software Development, Assets Management, Network Configuration, 
+                        Server Management, IT Support, User Management</p>
+                    <button class="expand-btn">View Details></button>
+
+                    <div class="timeline-expanded">
+                        <div class="timeline-achievements">
+                            <h4>Key Achievements</h4>
+                            <ul>
+                                <li>Develop and maintain custom in-house software solutions, including an IT request
+                                    management system, IT Asset Management System and ongoing development of internal
+                                    software to support operations.</li>
+                                    <li></li>Provide comprehensive IT support across 3 manufacturing plants, ensuring minimal
+                                    downtime and efficient issue resolution.</li>
+                                    Manage Windows Server environments, including regular backup checks, patching, and
+                                    server maintenance.</li>
+                                    <li> Administer Microsoft 365 and Active Directory for user account creation, access control, and
+                                    license management.</li>
+                                    <li> Oversee IT asset management: hardware/software inventory, procurement, and lifecycle
+                                    tracking.</li>
+                                    <li> Install and configure hardware and software, including PCs, printers, network devices, and
+                                    specialized systems. </li>
+                               
+                            </ul>
+                        </div>
+                        <div class="timeline-skills">
+                            <span class="timeline-skill">PHP</span>
+                            <span class="timeline-skill">PhpMyAdmin</span>
+                            <span class="timeline-skill">Putty</span>
+                            <span class="timeline-skill">Networking</span>
+                            <span class="timeline-skill">Software Development</span>
+                            <span class="timeline-skill">Hardware Configuration</span>
+                            <span class="timeline-skill">RestAPI</span>
+
+
+
+                        </div>
+                    </div>
+                </div>
+            </div> 
+            <!-- experience 1-->
             <div class="timeline-item" onclick="toggleTimelineExpansion(this)">
                 <div class="timeline-content">
                     <h3 class="timeline-title">Application Developer Intern</h3>
@@ -188,13 +235,13 @@
             <div class="project-card" onclick="toggleProjectExpansion(this)">
                 <div class="project-image">🚀</div>
                 <div class="project-content">
-                    <h3 class="project-title">E-Commerce Platform</h3>
+                    <h3 class="project-title">Room Rental</h3>
                     <p class="project-description">A full-featured e-commerce platform with payment integration, inventory management, and admin dashboard.</p>
                     <div class="project-tech">
-                        <span class="tech-tag">React</span>
-                        <span class="tech-tag">Node.js</span>
-                        <span class="tech-tag">MongoDB</span>
-                        <span class="tech-tag">Stripe</span>
+                        <span class="tech-tag">Java</span>
+                        <span class="tech-tag">Reactjs</span>
+                        <span class="tech-tag">MySql</span>
+                        <span class="tech-tag">Spring Boot</span>
                     </div>
                     <div class="project-links">
                         <a href="#" class="project-link">Live Demo</a>
@@ -206,9 +253,10 @@
                         <div class="project-features">
                             <h4>Key Features</h4>
                             <ul>
-                                <li>First</li>
-                                <li>second</li>
-                                <li>Third</li>
+                                <li>Property owners can list rooms</li>
+                                <li>Tenants can browse and book rooms</li>
+                                <li>Basic user authentication and management</li>
+                            
                             </ul>
                         </div>
                         <div class="project-stats">
@@ -222,7 +270,7 @@
                                 <div class="stat-label">Revenue</div>
                             </div>
                         </div>
-                        <p><strong>Challenge:</strong>Building a scalable e commerce</p>
+                        <p><strong>Challenge:</strong>Building a scalable and complete system</p>
                     </div>
                 </div>
             </div>
@@ -230,16 +278,17 @@
             <div class="project-card" onclick="toggleProjectExpansion(this)">
                 <div class="project-image">📱</div>
                 <div class="project-content">
-                    <h3 class="project-title">Task Management App</h3>
-                    <p class="project-description">A collaborative task management application with real-time updates and team collaboration features.</p>
+                    <h3 class="project-title">Expenses Tracker App</h3>
+                    <p class="project-description">A simple and easy expenses tracking system.</p>
                     <div class="project-tech">
-                        <span class="tech-tag">Vue.js</span>
-                        <span class="tech-tag">Firebase</span>
-                        <span class="tech-tag">Socket.io</span>
+                        <span class="tech-tag">C# Web API</span>
+                        <span class="tech-tag">Asp.Net</span>
+                        <span class="tech-tag">React</span>
+                        <span class="tech-tag">MySql</span>
                     </div>
                     <div class="project-links">
                         <a href="#" class="project-link" onclick="event.stopPropagation()">Live Demo</a>
-                        <a href="#" class="project-link" onclick="event.stopPropagation()">GitHub</a>
+                        <a href="#" class="https://github.com/apArve08/gemini1" onclick="event.stopPropagation()">GitHub</a>
                     </div>
                     <button class="project-expand-btn">Show More Details</button>
                     
@@ -247,32 +296,26 @@
                         <div class="project-features">
                             <h4>Key Features</h4>
                             <ul>
-                                <li>Real-time collaborative task boards</li>
-                                <li>Drag and drop task management</li>
-                                <li>Team member assignment and notifications</li>
+                                <li>Add, edit, delete expenses</li>
+                                <li>Categorize expenses</li>
+                                <li>Date-based expense tracking</li>
                                 <li>Time tracking and productivity analytics</li>
-                                <li>File attachments and comments</li>
-                                <li>Custom workflows and templates</li>
-                                <li>Mobile app with offline sync</li>
-                                <li>Integration with popular tools (Slack, Google Calendar)</li>
+                                <li>Total expense calculation</li>
+                                <li>Mobile responsive design</li>
+                                <li>Error handling and loading states</li>
                             </ul>
                         </div>
                         <div class="project-stats">
                             <div class="stat-item">
-                                <div class="stat-number">5K+</div>
-                                <div class="stat-label">Teams</div>
+                                <div class="stat-number">20+</div>
+                                <div class="stat-label">Files</div>
                             </div>
                             <div class="stat-item">
                                 <div class="stat-number">100K+</div>
                                 <div class="stat-label">Tasks</div>
                             </div>
-                            <div class="stat-item">
-                                <div class="stat-number">95%</div>
-                                <div class="stat-label">User Retention</div>
-                            </div>
-                            <div class="stat-item">
-                                <div class="stat-number">4.8/5</div>
-                                <div class="stat-label">App Rating</div>
+                            
+                    
                             </div>
                         </div>
                         <p><strong>Challenge:</strong> Creating a real-time collaborative experience that works seamlessly across devices.</p>
@@ -282,21 +325,52 @@
             </div>
             
             
-            <div class="project-card">
+            <div class="project-card"onclick="toggleProjectExpansion(this)">
                 <div class="project-image">📊</div>
                 <div class="project-content">
-                    <h3 class="project-title">Data Visualization Dashboard</h3>
-                    <p class="project-description">An interactive dashboard for visualizing complex data sets with customizable charts and filters.</p>
+                    <h3 class="project-title">Gemini AI Integration</h3>
+                    <p class="project-description">A simple program to showcase gemini ai integration using python.</p>
                     <div class="project-tech">
-                        <span class="tech-tag">D3.js</span>
                         <span class="tech-tag">Python</span>
-                        <span class="tech-tag">Flask</span>
-                        <span class="tech-tag">PostgreSQL</span>
+                        <span class="tech-tag">Vs Code</span>
+                        <span class="tech-tag">Gemini AI</span>
+                        <span class="tech-tag">Google Studio AI</span>
                     </div>
                     <div class="project-links">
                         <a href="#" class="project-link">Live Demo</a>
                         <a href="#" class="project-link">GitHub</a>
                     </div>
+                </div>
+            </div>
+
+
+            <div class="project-card" onclick="toggleProjectExpansion(this)">
+                <div class="project-image">📊</div>
+                <div class="project-content">
+                    <h3 class="project-title">Crud Room Rental</h3>
+                    <p class="project-description">A simple crud module of a room rental system.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Java</span>
+                        <span class="tech-tag">MySQL</span>
+                        <span class="tech-tag">React</span>
+                        <span class="tech-tag">Spring Boot</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#" class="project-link">Live Demo</a>
+                        <a href="#" class="project-link">GitHub</a>
+                    </div>
+                    <button class="project-expand-btn">Show More Details</button>
+                    
+                    <div class="project-expanded">
+                        <div class="project-features">
+                            <h4>Key Features</h4>
+                            <ul>
+                                <li>Frontend - React.js</li>
+                                <li>Backend - Java Spring</li>
+                                <li>DB: Mysql</li>
+                               
+                            </ul>
+                        </div>
                 </div>
             </div>
         
